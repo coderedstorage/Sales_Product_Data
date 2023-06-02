@@ -36,8 +36,12 @@ Generate insights from sales data, trends, activities and relevant metrics which
 * Poor resolution on unit economics (i.e. effective per unit margins) is limiting the intelligence needed to plan and forecast the business. If issues exist with respect adverse unit economics, there may be material challenge to the soundness of the economic presupposition on the proposed advertising decision (based on hourly purchase patterns). What drives poor resolution? Drivers on costs such as unit cost of inventory, proportionate SG&A cost allocation, returns (+ cost), platform charges, rebates and others are missing from the dataset.
 * The data by nature, lacks useful property to divine potential indeterminate possibilities for transformational brand-building and advertising efforts. As such, it is insufficient to capture Mr. AD-man Rory Sutherland's notion of 'magic'.
 
+
+## 6. Tableau visualization
+https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
+
 # Appendix: About the dataset
-Copied from Kaggle, source link https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
+Copied from Kaggle https://www.kaggle.com/datasets/knightbearr/sales-product-data?resource=download
 ## Context
 Sales analytics is the practice of generating insights from sales data, trends, and metrics to set targets and forecast future sales performance. Sales analysis is mining your data to evaluate the performance of your sales team against its goals. It provides insights about the top performing and underperforming products/services, the problems in selling and market opportunities, sales forecasting, and sales activities that generate revenue.
 ## Content
