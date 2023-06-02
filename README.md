@@ -1,4 +1,4 @@
-# Sales_Product_Data
+# Sales Product Data
 An attempt to identify potential marketing decision that can be explored through the analysis of the dataset of ecommerce electronics orders fulfilled in a few select US cities. 
 
 ## 1. Project description
