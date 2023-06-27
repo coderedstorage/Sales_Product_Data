@@ -9,7 +9,7 @@ Generate insights from sales data, trends, activities and relevant metrics which
 * Submitted to Masterschool schoolmaster and received commendation, and subsequently presented to Masterschool class.
 
 ## 3. Insights
-* Please see dashboard [(Tableau Story)](https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+* Please see dashboard [(Tableau Story)](https://public.tableau.com/views/Sales_Product_Data/StorySalesProductData?:language=en-US&:display_count=n&:origin=viz_share_link)
 * Types of insights shown:
   * Global and local financial metrics.
   * Behavioral patterns or trends: monthly seasonality, performance over space (city) and time (weeks/months) and hourly purchase patterns. 
@@ -17,30 +17,33 @@ Generate insights from sales data, trends, activities and relevant metrics which
   * Orders are categorized based on basket complexity, such as one type of product vs. multiple products. Economic density (revenue per order) shown in parallel. 
   * Estimated probabilities of the next purchase by product type.
 
-## Resources:
-* Dashboard [(Tableau Story)](https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+## 4. Resources:
+* Dashboard [(Tableau Story)](https://public.tableau.com/views/Sales_Product_Data/StorySalesProductData?:language=en-US&:display_count=n&:origin=viz_share_link)
 * [Github](https://github.com/coderedstorage/Sales_Product_Data)
+ * [Sales_Product_Data.twbx](https://github.com/coderedstorage/Sales_Product_Data/blob/main/Sales_Product_Data.twbx)
  * [archive.zip](https://github.com/coderedstorage/Sales_Product_Data/blob/main/archive.zip) (original data obtained from [Kaggle](https://www.kaggle.com/datasets/knightbearr/sales-product-data?resource=download)). Imported into MySQL table ecommerce.raw_table.
- * https://github.com/coderedstorage/Sales_Product_Data/blob/main/ecommerce.sales_2019_silver.sql
-
-## 2. Condition of dataset
-* Six-field dataset for fulfilled e-commerce orders (incl. quantities, selling prices etc) of premium and low-ASP/consumable electronics. 
-* Details for purchase times/locations (across a few US cities) is also included.
-* Minimal duplications found.
-* Lacks proper indexing in the form of sub-order ids etc, though not essesntial. 
-* More details, see Appendix.
+ * [ecommerce.sales_2019_silver.sql](https://github.com/coderedstorage/Sales_Product_Data/blob/main/ecommerce.sales_2019_silver.sql) MySQL script to generate MySQL view ecommerce.sales_2019_silver.
+ * [sales_2019_silver_complete.zip](https://github.com/coderedstorage/Sales_Product_Data/blob/main/sales_2019_silver_complete.zip) (final dataset committed to Tableau) exported from MySQL view ecommerce.sales_2019_silver.
+ * [Sales_Product_Analysis.ipynb](https://github.com/coderedstorage/Sales_Product_Data/blob/main/Sales_Product_Analysis.ipynb) python notebook to generate combo product analysis (order_combo.csv).
+ * [order_combo.csv](https://github.com/coderedstorage/Sales_Product_Data/blob/main/order_combo.csv) (data additionally committed to Tableau).
 
 ## 5. Tools used
-* MySQL/Python(Pandas) to facilitate enablement of useful derived datasets for final analytics run on Tableau Public. 
+* MySQL/Python(Pandas) to facilitate enablement of useful derived datasets
+* Tableau Public to create visualization (requires final dataset sales_2019_silver_complete.csv zipped in sales_2019_silver_complete.zip, and order_combo.csv to be committed to Tableau Public)
 * Enablement comprises:
    * Create derived fields on original ones for analysis.
    * Data cleansing (detection/elimination of small numbers of duplication).
    * Data type conversions to analyzable formats (e.g. text date to datetime).
    * Python/MySQL scripts in repository for reference.
 
+## 6. Condition of dataset
+* Six-field dataset for fulfilled e-commerce orders (incl. quantities, selling prices etc) of premium and low-ASP/consumable electronics. 
+* Details for purchase times/locations (across a few US cities) is also included.
+* Minimal duplications found.
+* Lacks proper indexing in the form of sub-order ids etc, though not essesntial. 
+* More details, see Appendix.
 
-
-## 5. Limitations and blind spots:
+## 7. Limitations and blind spots:
 * Only full year 2019 information is available in the dataset. Thus the analysis is restricted to 2019, and on a narrow slice of the ecommerce market in a handful of US cities. Thus, dataset may not be representative of the deterministic features of the addressable market. Thus, adjusting for outliers may not be necessary for enablement. 
 * Further investigation for joint probabilities of complementary multiple product purchases may be educational for now:
   * While multiple product purchases carry greater economic density, such orders are likely anchored by the major premium/high-value product component in the basket. 
