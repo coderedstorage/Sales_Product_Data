@@ -2,7 +2,23 @@
 An attempt to identify potential marketing decision that can be explored through the analysis of the dataset of ecommerce electronics orders fulfilled in a few select US cities. 
 
 ## 1. Project description
-Generate insights from sales data, trends, activities and relevant metrics which can be used to set targets and forecast dales performance, and execute decisions such as advertising. 
+Generate insights from sales data, trends, activities and relevant metrics which can be used to set targets and forecast dales performance, and execute decisions such as advertising.
+
+## 2. Submission & Feedback
+* Self-directed project.
+* Submitted to Masterschool schoolmaster and received commendation, and subsequently presented to Masterschool class.
+
+## 3. Generated types of insights
+
+
+## 4. Insights
+* Please see Dashboard [(Tableau Story)](https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+* Types of insights shown:
+  * Global and local financial metrics.
+  * Behavioral patterns or trends: monthly seasonality, performance over space (city) and time (weeks/months) and hourly purchase patterns. 
+  * Product taxonomy: overlay product species and economics, with considerations on lower lifespan consumables vs. non-consumables, and premium vs. low ASP (average selling price).
+  * Orders are categorized based on basket complexity, such as one type of product vs. multiple products. Economic density (revenue per order) shown in parallel. 
+  * Estimated probabilities of the next purchase by product type.
 
 ## 2. Condition of dataset
 * Six-field dataset for fulfilled e-commerce orders (incl. quantities, selling prices etc) of premium and low-ASP/consumable electronics. 
@@ -11,7 +27,7 @@ Generate insights from sales data, trends, activities and relevant metrics which
 * Lacks proper indexing in the form of sub-order ids etc, though not essesntial. 
 * More details, see Appendix.
 
-## 3. Tools used
+## 5. Tools used
 * MySQL/Python(Pandas) to facilitate enablement of useful derived datasets for final analytics run on Tableau Public. 
 * Enablement comprises:
    * Create derived fields on original ones for analysis.
@@ -19,12 +35,7 @@ Generate insights from sales data, trends, activities and relevant metrics which
    * Data type conversions to analyzable formats (e.g. text date to datetime).
    * Python/MySQL scripts in repository for reference.
 
-## 4. Generated insights
-* Global and local financial metrics.
-* Behavioral patterns or trends: monthly seasonality, performance over space (city) and time (weeks/months) and hourly purchase patterns. 
-* Product taxonomy: overlay product species and economics, with considerations on lower lifespan consumables vs. non-consumables, and premium vs. low ASP (average selling price).
-* Orders are categorized based on basket complexity, such as one type of product vs. multiple products. Economic density (revenue per order) shown in parallel. 
-* Estimated probabilities of the next purchase by product type.
+
 
 ## 5. Limitations and blind spots:
 * Only full year 2019 information is available in the dataset. Thus the analysis is restricted to 2019, and on a narrow slice of the ecommerce market in a handful of US cities. Thus, dataset may not be representative of the deterministic features of the addressable market. Thus, adjusting for outliers may not be necessary for enablement. 
