@@ -20,12 +20,12 @@ Generate insights from sales data, trends, activities and relevant metrics which
 ## 4. Resources:
 * Dashboard [(Tableau Story)](https://public.tableau.com/views/Sales_Product_Data/StorySalesProductData?:language=en-US&:display_count=n&:origin=viz_share_link)
 * [Github](https://github.com/coderedstorage/Sales_Product_Data)
- * [Sales_Product_Data.twbx](https://github.com/coderedstorage/Sales_Product_Data/blob/main/Sales_Product_Data.twbx)
- * [archive.zip](https://github.com/coderedstorage/Sales_Product_Data/blob/main/archive.zip) (original data obtained from [Kaggle](https://www.kaggle.com/datasets/knightbearr/sales-product-data?resource=download)). Imported into MySQL table ecommerce.raw_table.
- * [ecommerce.sales_2019_silver.sql](https://github.com/coderedstorage/Sales_Product_Data/blob/main/ecommerce.sales_2019_silver.sql) MySQL script to generate MySQL view ecommerce.sales_2019_silver.
- * [sales_2019_silver_complete.zip](https://github.com/coderedstorage/Sales_Product_Data/blob/main/sales_2019_silver_complete.zip) (final dataset committed to Tableau) exported from MySQL view ecommerce.sales_2019_silver.
- * [Sales_Product_Analysis.ipynb](https://github.com/coderedstorage/Sales_Product_Data/blob/main/Sales_Product_Analysis.ipynb) python notebook to generate combo product analysis (order_combo.csv).
- * [order_combo.csv](https://github.com/coderedstorage/Sales_Product_Data/blob/main/order_combo.csv) (data additionally committed to Tableau).
+   * [Sales_Product_Data.twbx](https://github.com/coderedstorage/Sales_Product_Data/blob/main/Sales_Product_Data.twbx)
+   * [archive.zip](https://github.com/coderedstorage/Sales_Product_Data/blob/main/archive.zip) (original data obtained from [Kaggle](https://www.kaggle.com/datasets/knightbearr/sales-product-data?resource=download)). Imported into MySQL table ecommerce.raw_table.
+   * [ecommerce.sales_2019_silver.sql](https://github.com/coderedstorage/Sales_Product_Data/blob/main/ecommerce.sales_2019_silver.sql) MySQL script to generate MySQL view ecommerce.sales_2019_silver.
+   * [sales_2019_silver_complete.zip](https://github.com/coderedstorage/Sales_Product_Data/blob/main/sales_2019_silver_complete.zip) (final dataset committed to Tableau) exported from MySQL view ecommerce.sales_2019_silver.
+   * [Sales_Product_Analysis.ipynb](https://github.com/coderedstorage/Sales_Product_Data/blob/main/Sales_Product_Analysis.ipynb) python notebook to generate combo product analysis (order_combo.csv).
+   * [order_combo.csv](https://github.com/coderedstorage/Sales_Product_Data/blob/main/order_combo.csv) (data additionally committed to Tableau).
 
 ## 5. Tools used
 * MySQL/Python(Pandas) to facilitate enablement of useful derived datasets
