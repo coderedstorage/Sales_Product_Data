@@ -8,17 +8,20 @@ Generate insights from sales data, trends, activities and relevant metrics which
 * Self-directed project.
 * Submitted to Masterschool schoolmaster and received commendation, and subsequently presented to Masterschool class.
 
-## 3. Generated types of insights
-
-
-## 4. Insights
-* Please see Dashboard [(Tableau Story)](https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+## 3. Insights
+* Please see dashboard [(Tableau Story)](https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 * Types of insights shown:
   * Global and local financial metrics.
   * Behavioral patterns or trends: monthly seasonality, performance over space (city) and time (weeks/months) and hourly purchase patterns. 
   * Product taxonomy: overlay product species and economics, with considerations on lower lifespan consumables vs. non-consumables, and premium vs. low ASP (average selling price).
   * Orders are categorized based on basket complexity, such as one type of product vs. multiple products. Economic density (revenue per order) shown in parallel. 
   * Estimated probabilities of the next purchase by product type.
+
+## Resources:
+* Dashboard [(Tableau Story)](https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+* [Github](https://github.com/coderedstorage/Sales_Product_Data)
+ * [archive.zip](https://github.com/coderedstorage/Sales_Product_Data/blob/main/archive.zip) (original data obtained from [Kaggle](https://www.kaggle.com/datasets/knightbearr/sales-product-data?resource=download)). Imported into MySQL table ecommerce.raw_table.
+ * https://github.com/coderedstorage/Sales_Product_Data/blob/main/ecommerce.sales_2019_silver.sql
 
 ## 2. Condition of dataset
 * Six-field dataset for fulfilled e-commerce orders (incl. quantities, selling prices etc) of premium and low-ASP/consumable electronics. 
@@ -47,12 +50,8 @@ Generate insights from sales data, trends, activities and relevant metrics which
 * Poor resolution on unit economics (i.e. effective per unit margins) is limiting the intelligence needed to plan and forecast the business. If issues exist with respect adverse unit economics, there may be material challenge to the soundness of the economic presupposition on the proposed advertising decision (based on hourly purchase patterns). What drives poor resolution? Drivers on costs such as unit cost of inventory, proportionate SG&A cost allocation, returns (+ cost), platform charges, rebates and others are missing from the dataset.
 * The data by nature, lacks useful property to divine potential indeterminate possibilities for transformational brand-building and advertising efforts. As such, it is insufficient to capture Mr. AD-man Rory Sutherland's notion of 'magic'.
 
-
-## 6. Tableau visualization
-https://public.tableau.com/views/sales_2019/StorySalesProductData?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
-
 # Appendix: About the dataset
-Copied from Kaggle https://www.kaggle.com/datasets/knightbearr/sales-product-data?resource=download
+Copied from [Kaggle](https://www.kaggle.com/datasets/knightbearr/sales-product-data?resource=download).
 ## Context
 Sales analytics is the practice of generating insights from sales data, trends, and metrics to set targets and forecast future sales performance. Sales analysis is mining your data to evaluate the performance of your sales team against its goals. It provides insights about the top performing and underperforming products/services, the problems in selling and market opportunities, sales forecasting, and sales activities that generate revenue.
 ## Content
@@ -65,7 +64,7 @@ Sales analytics is the practice of generating insights from sales data, trends, 
 ## Target
 A target market analysis is an assessment of how your product or service fits into a specific market and where it will gain the most.
 ## Task:
-* Q: What was the best Year for sales? How much was earned that Year? - [dataset insufficient to answer this question]
+* Q: What was the best Year for sales? How much was earned that Year? - [dataset insufficient to answer this]
 * Q: What was the best month for sales? How much was earned that month?
 * Q: What City had the highest number of sales?
 * Q: What time should we display adverstisement to maximize likelihood of customer's buying product?
