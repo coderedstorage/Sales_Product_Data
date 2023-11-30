@@ -1,4 +1,4 @@
-# Sales Product Data
+# Sales Product Data Analysis
 An attempt to identify potential marketing decision that can be explored through the analysis of the dataset of ecommerce electronics orders fulfilled in a few select US cities. 
 
 ## 1. Project description
